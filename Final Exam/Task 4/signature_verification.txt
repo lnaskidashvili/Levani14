@@ -1,0 +1,3 @@
+Content-Type: text/plain
+
+This is a confidential message from Alice to Bob.

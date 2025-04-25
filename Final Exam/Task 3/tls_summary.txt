@@ -1,0 +1,31 @@
+Task 3: TLS Communication Inspection & Analysis
+
+1. OpenSSL Connection
+----------------------
+Website: www.google.com
+TLS Version: TLS 1.3
+Cipher Suite: TLS_AES_128_GCM_SHA256
+
+Certificate Chain:
+- *.google.com (Leaf)
+- GTS CA 1C3 (Intermediate)
+- GlobalSign Root CA - R1 (Root)
+
+2. Wireshark Analysis
+----------------------
+Client Hello: Initiates TLS handshake with supported ciphers and extensions.
+Server Hello: Responds with selected cipher and certificate.
+Certificate: Server identity is verified using public-key infrastructure (PKI).
+Key Exchange: Diffie-Hellman key exchange securely shares symmetric key.
+
+3. How TLS Ensures Security
+----------------------------
+TLS provides:
+- Confidentiality: All data is encrypted with symmetric keys negotiated securely.
+- Integrity: HMAC ensures message integrity.
+- Authentication: Digital certificates verify the server's (and sometimes client’s) identity.
+- Forward Secrecy: Ephemeral keys ensure that even if one key is compromised, past sessions remain secure.
+
+
+Conclusion:
+TLS is the foundation of secure HTTPS communication. It ensures that web traffic is private, authenticated, and tamper-proof.
